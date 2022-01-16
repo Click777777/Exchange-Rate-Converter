@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Xe Currency Converter</title>
+	<!-- Primary Meta Tags -->
+	<title>ExCurrency</title>
+	<meta name="title" content="ExCurrency">
+	<meta name="description" content="You can exchanged the money from one currency to the others .">
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://exchangeRate.com/">
+	<meta property="og:title" content="ExCurrency">
+	<meta property="og:description" content="You can exchanged the money from one currency to the others .">
+	<meta property="og:image" content="./__img/logo.jpg">
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://exchangeRate.com/">
+	<meta property="twitter:title" content="ExCurrency">
+	<meta property="twitter:description" content="You can exchanged the money from one currency to the others .">
+	<meta property="twitter:image" content="./__img/logo.jpg">
+	<!-- linking Files -->
+	<link rel="shortcut icon" href="./__img/allFlag/realLogo.png" type="image/x-icon">
+	<link rel="stylesheet" href="./libraryForWeb/node_modules/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/SCSS/admin.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	
+	<div class=" childBody vh-100 overflow-scroll">
+		<section class=" container-fluid p-0 title">
+			<div class=" container my-0">
+				<div class="row">
+					<div class=" col-12">
+						<div class="row">
+							<div class=" col-12">
+								<div class=" d-flex justify-content-between align-items-center">
+									<div class=" cursorPointer py-3">
+										<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 710 568.71" style="width:50px;height:40px;color:#fff;background-color: var(--main);">
+											<path fill="currentColor" d="M270.72 427.89h-79.85a2.9 2.9 0 01-2.46-1.37l-51.6-83.33-51.62 83.33a2.87 2.87 0 01-2.45 1.37H2.9a2.89 2.89 0 01-2.4-4.51L96.36 280.9 1.68 143.35a2.89 2.89 0 012.38-4.53h80.33a2.88 2.88 0 012.44 1.36l50 79.51 49.67-79a3.88 3.88 0 013.3-1.83h79.77a2.89 2.89 0 012.38 4.53L177.24 280.9l95.88 142.48a2.9 2.9 0 01-2.4 4.51zM424.65.01a282.59 282.59 0 00-208 90.9 1.47 1.47 0 001.08 2.45h12.57a2.86 2.86 0 001.87-.71 256.49 256.49 0 01168.92-63c141.47 0 256.14 113.6 256.14 253.73S542.6 537.09 401.13 537.09a256.51 256.51 0 01-168.92-63 2.86 2.86 0 00-1.87-.71h-12.57a1.47 1.47 0 00-1.08 2.45 282.59 282.59 0 00208 90.9C581.14 566.71 708 439.84 708 283.35S581.14.01 424.65.01zM537 309.09H323.47c1.87 32.38 30.45 60.31 71.9 60.31 31.92 0 52.26-12.7 64.6-32.2a2.89 2.89 0 013.78-1.06l54 28a2.9 2.9 0 011.1 4.16C493.14 407.14 449 432.8 395 432.8h-.4c-85.55 0-144.13-62.6-144.13-149.45S309 133.91 394.55 133.91s147.17 66.91 147.17 149.44a147 147 0 01-1.65 22.55c-.28 1.5-1.33 3.19-3.07 3.19zm-67.1-58.5c-4.47-18.38-26-53.3-71.91-53.3-44.1 0-66.77 27.59-72.15 53.3z"></path>
+										</svg>
+									</div>
+									<div class=" d-none d-lg-block w-50">
+										<div class=" d-flex justify-content-around align-items-center ">
+											<div class=" cursorPointer user-select-none text-light py-4 px-2 ">Converter</div>
+											<div  class=" cursorPointer user-select-none text-light menuPopUp position-relative py-4 px-2">
+												Send Money
+												<div class=" d-none sendMoney shadow-lg p-4">
+													<div class=" py-3 d-flex align-items-center">
+														<div class=" pe-4">
+															<i class=" text-primary fs-5 fa fa-dollar"></i>
+														</div>
+														<div>
+															<div class=" text-secondary" style="font-size: 13px;">Send Money</div>
+															<div class=" text-black-50" style="font-size: 11px;" >Get quote for fast and secure money transfers</div>
+														</div>
+													</div>
+
+													<div class=" py-3 d-flex align-items-center">
+														<div class=" pe-3">
+															<i class=" text-primary fs-5 fa fa-paper-plane-o"></i>
+														</div>
+														<div>
+															<div class=" text-secondary" style="font-size: 13px;">Sign up</div>
+														</div>
+													</div>
+
+													<div class=" py-3 d-flex align-items-center">
+														<div class=" pe-3">
+															<i class=" text-primary fs-5 fa fa-exchange"></i>
+														</div>
+														<div class=" d-flex justify-content-center">
+															<span class=" text-secondary" style="font-size: 13px;">Compare rates</span>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class=" cursorPointer user-select-none text-light apiPop py-4 px-2 position-relative">
+												Business & API
+												<div class="d-none sendMoney API shadow-lg p-4" style="height: 380px;">
+													<div class=" py-3 d-flex align-items-center">
+														<div>
+															<i class=" text-primary fs-5 fa fa-briefcase"></i>
+														</div>
+														<div class=" ms-3">
+															<div class=" text-secondary" style="font-size: 13px;">Business money transfer</div>
+															<div class=" text-black-50" style="font-size: 11px;" >International payments for your business</div>
+														</div>
+													</div>
+
+													<div class=" py-3 d-flex align-items-center">
+														<div>
+															<i class=" text-primary fs-5 fa fa-rocket"></i>
+														</div>
+														<div class=" ms-3">
+															<div class=" text-secondary" style="font-size: 13px;">Create a business account</div>
+														</div>
+													</div>
+
+													<div class=" py-3 d-flex align-items-center">
+														<div>
+															<i class=" text-primary fs-5 fa fa-xing"></i>
+														</div>
+														<div class=" ms-4">
+															<div class=" text-secondary" style="font-size: 13px;">Xe Currency Data API</div>
+														</div>
+													</div>
+
+													<div class=" py-3 d-flex align-items-center">
+														<div>
+															<i class=" text-primary fs-5 fa fa-credit-card"></i>
+														</div>
+														<div class=" ms-3">
+															<div class=" text-secondary" style="font-size: 13px;">Mass payments</div>
+														</div>
+													</div>
+
+													<div class=" py-3 d-flex align-items-center">
+														<div>
+															<i class=" text-primary fs-5 fa fa-joomla"></i>
+														</div>
+														<div class=" ms-3">
+															<div class=" text-secondary" style="font-size: 13px;">Products & Services</div>
+														</div>
+													</div>
+
+													<div class=" py-3 d-flex align-items-center">
+														<div>
+															<i class=" text-primary fs-5 fa fa-users"></i>
+														</div>
+														<div class=" ms-3">
+															<div class=" text-secondary" style="font-size: 13px;">Partnerships</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class=" cursorPointer user-select-none text-light toolPop py-4 px-2 position-relative">Tools
+												<div class="d-none TOOL shadow-lg p-4 px-5">
+													
+													<div class=" d-flex justify-content-between">
+
+														<div>
+
+															<div class=" py-3 d-flex align-items-center">
+																<div>
+																	<i class=" text-primary fs-5 fa fa-dollar"></i>
+																</div>
+																<div class=" ms-3">
+																	<div class=" text-secondary" style="font-size: 13px;">Currency Converter</div>
+																	<div class=" text-black-50" style="font-size: 11px;" >Check today's rates</div>
+																</div>
+															</div>
+		
+															<div class=" py-3 d-flex align-items-center">
+																<div>
+																	<i class=" text-primary fs-5 fa fa-bar-chart-o"></i>
+																</div>
+																<div class=" ms-3">
+																	<div class=" text-secondary" style="font-size: 13px;">Currency Charts</div>
+																	<div class=" text-black-50" style="font-size: 11px;" >Trends for any currency</div>
+																</div>
+															</div>
+		
+															<div class=" py-3 d-flex align-items-center">
+																<div>
+																	<i class=" text-primary fs-5 fa fa-bell-o"></i>
+																</div>
+																<div class=" ms-3">
+																	<div class=" text-secondary" style="font-size: 13px;">Rate Alerts</div>
+																	<div class=" text-black-50" style="font-size: 11px;" >Set your target rate and get alerted</div>
+																</div>
+															</div>
+		
+															<div class=" py-3 d-flex align-items-center">
+																<div>
+																	<i class=" text-primary fs-5 fa fa-check"></i>
+																</div>
+																<div class=" ms-3">
+																	<div class=" text-secondary" style="font-size: 13px;">Historical Currency Rates</div>
+																	<div class=" text-black-50" style="font-size: 11px;" >Check rates for any date</div>
+																</div>
+															</div>
+
+														</div>
+
+														<div >
+
+															<div class=" py-3 d-flex align-items-center">
+																<div>
+																	<i class=" text-primary fs-5 fa fa-balance-scale"></i>
+																</div>
+																<div class=" ms-2">
+																	<div class=" text-secondary" style="font-size: 13px;">Converter Widget</div>
+																	<div class=" text-black-50" style="font-size: 11px;" >Use the Xe converter on your website</div>
+																</div>
+															</div>
+		
+															<div class=" py-3 d-flex align-items-center">
+																<div>
+																	<i class=" text-primary fs-5 fa fa-globe"></i>
+																</div>
+																<div class=" ms-3">
+																	<div class=" text-secondary" style="font-size: 13px;">Travel Expenses Calculator</div>
+																	<div class=" text-black-50" style="font-size: 11px;" >Calculate foreign exchange charges</div>
+																</div>
+															</div>
+		
+															<div class=" py-3 d-flex align-items-center">
+																<div>
+																	<i class=" text-primary fs-5 fa fa-mobile-phone"></i>
+																</div>
+																<div class=" ms-4">
+																	<div class=" text-secondary" style="font-size: 13px;">Apps</div>
+																	<div class=" text-black-50" style="font-size: 11px;" >Smartphone apps and more</div>
+																</div>
+															</div>
+		
+															<div class=" py-3 d-flex align-items-center">
+																<div>
+																	<i class=" text-primary fs-5 fa fa-plus"></i>
+																</div>
+																<div class=" ms-3">
+																	<div class=" text-secondary" style="font-size: 13px;">More</div>
+																</div>
+															</div>
+
+														</div>
+
+													</div>
+
+												</div>
+											</div>
+
+											<div class=" cursorPointer user-select-none text-light resourcePop py-4 px-2 position-relative">Resources
+												<div class="d-none RES shadow-lg px-4 py-3">
+													<div class=" py-3 d-flex align-items-center">
+														<div>
+															<i class=" text-primary fs-5 fa fa-question-circle-o"></i>
+														</div>
+														<div class=" ms-3">
+															<div class=" text-secondary" style="font-size: 13px;">Help Centre</div>
+														</div>
+													</div>
+
+													<div class=" py-3 d-flex align-items-center">
+														<div>
+															<i class=" text-primary fs-5 fa fa-cube"></i>
+														</div>
+														<div class=" ms-3">
+															<div class=" text-secondary" style="font-size: 13px;">Blog</div>
+														</div>
+													</div>
+
+													<div class=" py-3 d-flex align-items-center">
+														<div>
+															<i class=" text-primary fs-5 fa fa-lightbulb-o"></i>
+														</div>
+														<div class=" ms-4">
+															<div class=" text-secondary" style="font-size: 13px;">Money Transfer Tips</div>
+														</div>
+													</div>
+
+													<div class=" py-3 d-flex align-items-center">
+														<div>
+															<i class=" text-primary fs-5 fa fa-newspaper-o"></i>
+														</div>
+														<div class=" ms-3">
+															<div class=" text-secondary" style="font-size: 13px;">Currency Newsletters</div>
+														</div>
+													</div>
+
+													<div class=" py-3 d-flex align-items-center">
+														<div>
+															<i class=" text-primary fs-5 fa fa-file-text-o"></i>
+														</div>
+														<div class=" ps-4">
+															<div class=" text-secondary" style="font-size: 13px;">Currency Encyclopedia</div>
+														</div>
+													</div>
+
+													<div class=" py-3 d-flex align-items-center">
+														<div>
+															<i class=" text-primary fs-5 fa fa-check-square"></i>
+														</div>
+														<div class=" ms-4">
+															<div class=" text-secondary" style="font-size: 13px;">Glossary</div>
+														</div>
+													</div>
+
+													<div class=" py-3 d-flex align-items-center">
+														<div>
+															<i class=" text-primary fs-5 fa fa-plus"></i>
+														</div>
+														<div class=" ms-4">
+															<div class=" text-secondary" style="font-size: 13px;">More</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div> 
+									<div class=" d-flex align-items-center">
+										<div  class=" cursorPointer user-select-none d-none d-lg-block px-4 text-light position-relative signPop py-4">Sign in
+											<div class=" d-none SIGN shadow-lg px-4 py-3">
+												<div class=" py-3 d-flex align-items-center">
+													<div>
+														<i class=" text-primary fs-5 fa fa-paper-plane-o"></i>
+													</div>
+													<div class=" ms-4">
+														<div class=" text-secondary" style="font-size: 13px;">Money Transfer</div>
+													</div>
+												</div>
+												<div class=" py-3 d-flex align-items-center">
+													<div>
+														<i class=" text-primary fs-5 fa fa-bell-o"></i>
+													</div>
+													<div class=" ms-4">
+														<div class=" text-secondary" style="font-size: 13px;">Rate Alerts</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div>
+											<button type="button" class="btn btn-primary rounded-3" style="font-size: var(--fSize);font-weight:var(--bold)">Get the App</button>
+										</div>
+										<button class="btn menuBarr ms-3 d-block d-lg-none" type="button">
+											<i class="menuIcons fs-5 text-white fa fa-bars"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr class=" bg-white m-0">
+		</section>
+		<section class=" container-fluid middle">
+			<div class=" container">
+				<div class=" row">
+					<div class=" col-12">
+	
+						<div class="row">
+							<div class=" col-12">
+								<div class=" d-flex justify-content-center align-items-center">
+									<div class=" p-2 my-4 d-flex flex-column align-items-center justify-content-center" style="padding-top: 70px!important;">
+										<div class=" fs-2 fw-bolder text-light">Xe Currency Converter</div>
+										<div class=" text-center text-light">Check live foreign currency exchange rates</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class=" col-12">
+								<div class=" card shadow " style="border-radius: var(--border);">
+									<div class=" card-body">
+				
+										<div class=" row pb-5">
+											<div class=" col-3">
+												<div class=" d-flex justify-content-center">
+													<div class=" d-flex align-items-center cursorPointer flex-column flex-md-row">
+														<div>
+															<i class="fa fa-dollar text-primary fw-bold fs-6 "></i>
+														</div>
+														<div class=" text-primary user-select-none ms-md-2" style="font-size: var(--fSize);">Convert</div>
+													</div>
+												</div>
+											</div>
+											<div class=" col-3">
+												<div class=" d-flex justify-content-center">
+													<div class=" d-flex align-items-center cursorPointer flex-column flex-md-row">
+														<div>
+															<i class="fa fa-send-o text-secondary fw-bold fs-6  "></i>
+														</div>
+														<div class=" text-secondary user-select-none ms-md-2" style="font-size: var(--fSize);">Send</div>
+													</div>
+												</div>
+											</div>
+											<div class=" col-3">
+												<div class=" d-flex justify-content-center">
+													<div class=" d-flex align-items-center cursorPointer flex-column flex-md-row">
+														<div>
+															<i class="fa fa-bar-chart text-secondary fw-bold fs-6 "></i>
+														</div>
+														<div class=" text-secondary user-select-none ms-md-2" style="font-size: var(--fSize);">Charts</div>
+													</div>
+												</div>
+											</div>
+											<div class=" col-3">
+												<div class=" d-flex justify-content-center">
+													<div class=" d-flex align-items-center cursorPointer flex-column flex-md-row">
+														<div>
+															<i class="fa fa-bell-o text-secondary fw-bold fs-6 "></i>
+														</div>
+														<div class=" text-secondary user-select-none ms-md-2" style="font-size: var(--fSize);">Alerts</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<form action="#" method="post" class=" form">
+											<div class=" row">
+												<div class=" py-0 px-5">
+													<div class=" row">
+														<div class=" col-12 col-md-4 position-relative">
+															<label for="number" class="number text-black form-label fw-bold" style="font-size: var(--fSize);">Amount</label>
+															<input type="number" name="number" id="number" class="inputValue form-control py-2 mb-3 firstForm" min="1" required autofocus>
+														</div>
+														<div class=" col-12 col-md-4">
+															<label for="number" class="number text-black form-label fw-bold" style="font-size: var(--fSize);">From</label>
+															<select class=" cursorPointer form-select selectFrom form-select-lg mb-3 py-2 fs-6 secForm" aria-label=".form-select-lg example" required>
+																<option value="" disabled selected>Select Currency</option>
+															</select>
+														</div>
+														<div class=" col-12 col-md-4">
+															<label for="number" class="number text-black form-label fw-bold" style="font-size: var(--fSize);">To</label>
+															<select class=" cursorPointer form-select selectTo form-select-lg mb-3 py-2 fs-6 thirdForm" aria-label=".form-select-lg example">
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row pt-md-5">
+												<div class=" col-12">
+
+													<div class="upper px-5 pb-2">
+													</div>
+
+												</div>
+											</div>
+
+											<div class=" row">
+												<div class=" pb-4 px-5">
+													<div class=" d-flex justify-content-between align-items-md-center flex-column flex-md-row">
+														<div class="  d-flex align-items-center justify-content-end justify-content-md-start mb-2 mb-md-0">
+															<div class=" d-flex align-items-center special">
+																<span class=" me-1 text-secondary" style="font-size: var(--fSize);">We use midmarket rates</span>
+																<i data-bs-toggle="tooltip" data-bs-placement="right" title="These are derived from the mid-point between the 'buy' and 'sell' transactional rates from global currency markets. They are not transactional rates." class="pop fa fa-info-circle fs-6 text-black-50"></i>
+															</div>
+														</div>
+															<div class=" ">
+																<button type="submit" class=" py-2 btn btn-primary rounded-3 fs-6 px-4 fw-bold w-100 mdDevice">Convert</button>
+															</div>
+													</div>
+												</div>
+											</div>
+										</form>
+		
+									</div>
+								</div>
+							</div>
+						</div>
+	
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class=" afterMenu container-fluid dNone">
+			<div class=" container">
+				<div class=" row afterMenuSec">
+					<div class=" col-12 py-3">
+						<div class=" btn d-flex justify-content-between align-items-baseline showOne"  data-bs-toggle="collapse" data-bs-target="#converter" aria-expanded="false" aria-controls="converter">
+							<div class="">Converter</div>
+						</div>
+						<div class="collapse" id="converter">
+						</div>
+						<hr>
+
+						<div class=" btn d-flex justify-content-between align-items-baseline showTwo"  data-bs-toggle="collapse" data-bs-target="#secConverter" aria-expanded="false" aria-controls="secConverter">
+							<div class="">Send Money</div>
+							<div>
+								<i class=" opacity-75 text-secondary fa fa-chevron-right showTwos"></i>
+							</div>
+						</div>
+						<div class="collapse" id="secConverter">
+							<div class="card card-body">
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-dollar"></i>
+									</div>
+									<div class=" ms-4">
+										<div>Send Money</div>
+										<div class=" text-secondary" style="font-size: var(--fSize);">Get a quote for fast and secure money transfers</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-paper-plane-o"></i>
+									</div>
+									<div class=" ms-3">
+										<div>Sign up</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-0">
+									<div>
+										<i class=" fs-4 text-primary fa fa-exchange"></i>
+									</div>
+									<div class=" ms-3">
+										<div>Compare rates</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr>
+
+						<div class=" btn d-flex justify-content-between align-items-baseline showThree"  data-bs-toggle="collapse" data-bs-target="#thirdConverter" aria-expanded="false" aria-controls="thirdConverter">
+							<div class="">Business & API</div>
+							<div>
+								<i class=" opacity-75 text-secondary fa fa-chevron-right showThrees "></i>
+							</div>
+						</div>
+						<div class="collapse" id="thirdConverter">
+							<div class="card card-body">
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-briefcase"></i>
+									</div>
+									<div class=" ms-3">
+										<div>Business money transfer</div>
+										<div class=" text-secondary" style="font-size: var(--fSize);">International payments for your business</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-rocket"></i>
+									</div>
+									<div class=" ms-3">
+										<div>Create a business account</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-xing"></i>
+									</div>
+									<div class=" ms-4">
+										<div>Xe Currency Data API</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-credit-card"></i>
+									</div>
+									<div class=" ms-3">
+										<div>Mass payments</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-joomla"></i>
+									</div>
+									<div class=" ms-4">
+										<div>Products & Services</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-0">
+									<div>
+										<i class=" fs-4 text-primary fa fa-users"></i>
+									</div>
+									<div class=" ms-3">
+										<div>Partnerships</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr>
+
+						<div class=" btn d-flex justify-content-between align-items-baseline showFour"  data-bs-toggle="collapse" data-bs-target="#fourthConverter" aria-expanded="false" aria-controls="fourthConverter">
+							<div class="">Tools</div>
+							<div>
+								<i class=" opacity-75 text-secondary fa fa-chevron-right showFours "></i>
+							</div>
+						</div>
+						<div class="collapse" id="fourthConverter">
+							<div class="card card-body">
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-dollar"></i>
+									</div>
+									<div class=" ms-4">
+										<div>Currency Converter</div>
+										<div class=" text-secondary" style="font-size: var(--fSize);">Check today's rates</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-bar-chart-o"></i>
+									</div>
+									<div class=" ms-3">
+										<div>Currency Charts</div>
+										<div class=" text-secondary" style="font-size: var(--fSize);">Trends for any currency</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-bell-o"></i>
+									</div>
+									<div class=" ms-3">
+										<div>Rate Alerts</div>
+										<div class=" text-secondary" style="font-size: var(--fSize);">Set your target rate and get alerted</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-check"></i>
+									</div>
+									<div class=" ms-3">
+										<div>Historical Currency Rates</div>
+										<div class=" text-secondary" style="font-size: var(--fSize);">Check rates for any date</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-balance-scale"></i>
+									</div>
+									<div class=" ms-2">
+										<div>Converter Widget</div>
+										<div class=" text-secondary" style="font-size: var(--fSize);">Use the Xe converter on your website</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-globe"></i>
+									</div>
+									<div class=" ms-3">
+										<div>Travel Expenses Calculator</div>
+										<div class=" text-secondary" style="font-size: var(--fSize);">Calculate foreign exchange charges</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-mobile-phone"></i>
+									</div>
+									<div class=" ms-4">
+										<div>Apps</div>
+										<div class=" text-secondary" style="font-size: var(--fSize);">Smartphone apps and more</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-0">
+									<div>
+										<i class=" fs-4 text-primary fa fa-plus"></i>
+									</div>
+									<div class=" ms-3">
+										<div>More</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr>
+
+						<div class=" btn d-flex justify-content-between align-items-baseline showFive"  data-bs-toggle="collapse" data-bs-target="#fifthConverter" aria-expanded="false" aria-controls="fifthConverter">
+							<div class="">Resources</div>
+							<div>
+								<i class=" opacity-75 text-secondary fa fa-chevron-right showFives "></i>
+							</div>
+						</div>
+						<div class="collapse" id="fifthConverter">
+							<div class="card card-body">
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-question-circle-o"></i>
+									</div>
+									<div class=" ms-3">
+										<div>Help Centre</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-cube"></i>
+									</div>
+									<div class=" ms-3">
+										<div>Blog</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-lightbulb-o"></i>
+									</div>
+									<div class=" ms-4">
+										<div>Money Transfer Tips</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-newspaper-o"></i>
+									</div>
+									<div class=" ms-2">
+										<div>Currency Newsletters</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-file-text-o"></i>
+									</div>
+									<div class=" ms-3">
+										<div>Currency Encyclopedia</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-4">
+									<div>
+										<i class=" fs-4 text-primary fa fa-check-square"></i>
+									</div>
+									<div class=" ms-3">
+										<div>Glossary</div>
+									</div>
+								</div>
+								<div class=" d-flex align-items-center mb-0">
+									<div>
+										<i class=" fs-4 text-primary fa fa-plus"></i>
+									</div>
+									<div class=" ms-3">
+										<div>More</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<hr>
+					</div>
+				</div>
+				<div class=" row">
+					<div class=" col-12">
+						<div class=" position-relative">
+							<div class="signInBtn py-4 bg-white">
+								<button class=" btn btn-primary w-100 " style="padding: 12px 0;border-radius:6px" data-bs-toggle="offcanvas" data-bs-target="#phoneFromButtom" aria-controls="phoneFromButtom"	>Sign in</button>
+
+								<div style="height: 20vh;" class="offcanvas offcanvas-bottom allocate p-3" tabindex="-1" id="phoneFromButtom" aria-labelledby="offcanvasBottomLabel">
+									<div class="offcanvas-header p-4">
+										<h6 class="offcanvas-title text-secondary" id="offcanvasBottomLabel">Sign in</h6>
+										<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+									</div>
+									<div class="offcanvas-body small px-4 py-3 pt-0">
+										<div class=" py-3 d-flex align-items-center">
+											<div>
+												<i class=" text-primary fs-5 fa fa-paper-plane-o"></i>
+											</div>
+											<div class=" ms-4">
+												<div class=" text-secondary" style="font-size: 13px;">Money Transfer</div>
+											</div>
+										</div>
+										<div class=" py-3 d-flex align-items-center">
+											<div>
+												<i class=" text-primary fs-5 fa fa-bell-o"></i>
+											</div>
+											<div class=" ms-4">
+												<div class=" text-secondary" style="font-size: 13px;">Rate Alerts</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</div>
+
+	<script src="./libraryForWeb/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="./js/api.js"></script>
+	<script src="./js/app.js"></script>
+	<script src="./js/script.js"></script>
+</body>
+</html>
