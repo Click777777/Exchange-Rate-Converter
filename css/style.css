@@ -10,6 +10,13 @@
   font-family: "Roboto", sans-serif;
   font-size: 15px;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
 body {
   background-color: var(--main);
 }
