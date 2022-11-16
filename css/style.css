@@ -14,12 +14,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-body {
-  -ms-overflow-style: none;
-}
+
 body {
   background-color: var(--main);
 }
